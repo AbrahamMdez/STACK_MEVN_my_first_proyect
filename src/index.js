@@ -8,13 +8,13 @@ require('./database');
 const app = express();
 app.set('port', process.env.PORT || 8080);
 
-//Routes
-
-
 //Middelwares
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+//Routes
+app.use('/tasks', require('./routes/taskRoutes'));
 
 //Static files
 app.use(express.static(__dirname + '/public'));
