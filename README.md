@@ -1,5 +1,7 @@
 # mongo-express-vue-node
 
+This proyect is very small because i practice on my own how install Vue, and i did a little crud
+
 ## Project setup
 ```
 npm install
